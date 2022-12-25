@@ -1,0 +1,4 @@
+This is dummy Assignment 
+Q1.Write C++ program to display...Hello World ?:
+Q2.C++ Vs Python debate of Language ?
+Q3.C++ write program to display sum of 2 numbers ?

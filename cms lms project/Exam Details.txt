@@ -1,0 +1,306 @@
+
+Course Title			Hall no
+
+Course Title			lab no
+
+ooplab                      	 12        
+ddlab                       	 13        
+ Date			       Time		Theory exam duration
+
+2 / 3 / 2022			1 : 0 : 0			1.5
+
+4 / 3 / 2022			1 : 0 : 0			1.5
+
+6 / 3 / 2022			1 : 0 : 0			1.5
+
+8 / 3 / 2022			2 : 0 : 0			1.5
+
+10 / 3 / 2022			2 : 0 : 0			1.5
+
+ Date			        Time		lab exam duration
+
+12 / 3 / 2022			3 : 0 : 0			2
+
+14 / 3 / 2022			4 : 0 : 0			2
+
+
+Theory invigilators ------- 	Course
+nabia	--------------- 	oop
+asif	--------------- 	cs
+ishrat	--------------- 	ct
+aliya	--------------- 	dd
+mawish	--------------- 	dm
+
+
+Lab invigilators ------- 	Course
+nabia	 --------------- 	ooplab
+amna	 --------------- 	ddlab
+
+Theory Invigilator fee
+
+nabia      : 30
+asif       : 30
+ishrat     : 30
+aliya      : 30
+mawish     : 30
+
+Lab Invigilator fee
+
+nabia      : 20
+amna       : 20
+Course Title			Hall no
+
+Course Title			lab no
+
+ooplab                      	 11        
+ddlab                       	 22        
+ Date			       Time		Theory exam duration
+
+1 / 2 / 2022			12 : 0 : 0			1.5
+
+2 / 2 / 2022			12 : 0 : 0			1.5
+
+1 / 2 / 2022			12 : 0 : 0			1.5
+
+2 / 2 / 2022			1 : 0 : 0			1.5
+
+1 / 2 / 2022			1 : 0 : 0			1.5
+
+ Date			        Time		lab exam duration
+
+2 / 2 / 2022			2 : 0 : 0			2
+
+1 / 2 / 2022			3 : 0 : 0			2
+
+Theory Invigilator fee
+
+qwe        : 30
+asd        : 30
+rty        : 30
+fgh        : 30
+uio        : 30
+
+Lab Invigilator fee
+
+hjk        : 20
+zxc        : 20
+Course Title			Hall no
+
+Course Title			lab no
+
+2                           	 2         
+1                           	 1         
+ Date			       Time		Theory exam duration
+
+2 / 1 / 2			1 : 0 : 0			2
+
+1 / 1 / 2			2 : 0 : 0			2
+
+2 / 1 / 2			1 : 0 : 0			2
+
+1 / 1 / 2			2 : 0 : 0			2
+
+2 / 1 / 2			1 : 0 : 0			2
+
+ Date			        Time		lab exam duration
+
+1 / 1 / 2			2 : 0 : 0			1
+
+2 / 1 / 2			1 : 0 : 0			1
+
+
+Theory invigilators ------- 	Course
+2	--------------- 	oop
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+2	--------------- 	2
+
+
+Lab invigilators ------- 	Course
+1	 --------------- 	2
+2	 --------------- 	1
+
+Theory Invigilator fee
+
+2          : 40
+1          : 40
+2          : 40
+1          : 40
+2          : 40
+
+Lab Invigilator fee
+
+1          : 10
+2          : 10
+Course Title			Hall no
+
+Course Title			lab no
+
+1                           	 1         
+2                           	 2         
+ Date			       Time		Theory exam duration
+
+1 / 2 / 1			2 : 0 : 0			1
+
+2 / 2 / 1			1 : 0 : 0			1
+
+1 / 2 / 1			2 : 0 : 0			1
+
+2 / 2 / 1			1 : 0 : 0			1
+
+1 / 2 / 1			2 : 0 : 0			1
+
+ Date			        Time		lab exam duration
+
+2 / 2 / 1			1 : 0 : 0			2
+
+1 / 2 / 1			2 : 0 : 0			2
+
+
+Theory invigilators ------- 	Course
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+
+
+Lab invigilators ------- 	Course
+22	 --------------- 	1
+1	 --------------- 	2
+
+Course Title			Hall no
+
+Course Title			lab no
+
+1                           	 1         
+2                           	 2         
+ Date			       Time		Theory exam duration
+
+1 / 2 / 1			2 : 0 : 0			1
+
+2 / 2 / 1			1 : 0 : 0			1
+
+1 / 2 / 1			2 : 0 : 0			1
+
+2 / 2 / 1			1 : 0 : 0			1
+
+1 / 2 / 1			2 : 0 : 0			1
+
+ Date			        Time		lab exam duration
+
+2 / 2 / 1			1 : 0 : 0			2
+
+1 / 2 / 1			2 : 0 : 0			2
+
+
+Theory invigilators ------- 	Course
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+
+
+Lab invigilators ------- 	Course
+2	 --------------- 	1
+1	 --------------- 	2
+
+Theory Invigilator fee
+
+1          : 20
+2          : 20
+1          : 20
+2          : 20
+1          : 20
+
+Lab Invigilator fee
+
+2          : 20
+1          : 20
+Course Title			Hall no
+
+Course Title			lab no
+
+1                           	 1         
+2                           	 2         
+ Date			       Time		Theory exam duration
+
+21 / 2 / 1			1 : 0 : 0			1
+
+2 / 2 / 1			2 : 0 : 0			1
+
+1 / 2 / 1			12 : 0 : 0			1
+
+1 / 2 / 1			1 : 0 : 0			1
+
+1 / 2 / 1			2 : 0 : 0			1
+
+ Date			        Time		lab exam duration
+
+2 / 2 / 1			1 : 0 : 0			1
+
+1 / 2 / 1			2 : 0 : 0			1
+
+
+Theory invigilators ------- 	Course
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+21	--------------- 	2
+2	--------------- 	1
+
+
+Lab invigilators ------- 	Course
+1	 --------------- 	1
+2	 --------------- 	2
+
+Theory Invigilator fee
+
+1          : 20
+2          : 20
+1          : 20
+21         : 20
+2          : 20
+
+Lab Invigilator fee
+
+1          : 10
+2          : 10
+Course Title			Hall no
+
+Course Title			lab no
+
+1                           	 1         
+2                           	 2         
+ Date			       Time		Theory exam duration
+
+2 / 2 / 1			2 : 0 : 0			2
+
+12 / 2 / 1			1 : 0 : 0			2
+
+1 / 2 / 1			2 : 0 : 0			2
+
+2 / 2 / 1			1 : 0 : 0			2
+
+1 / 2 / 1			2 : 0 : 0			2
+
+ Date			        Time		lab exam duration
+
+2 / 2 / 1			1 : 0 : 0			1
+
+1 / 2 / 1			21 : 0 : 0			1
+
+
+Theory invigilators ------- 	Course
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+2	--------------- 	2
+1	--------------- 	1
+
+
+Lab invigilators ------- 	Course
+2	 --------------- 	1
+1	 --------------- 	2

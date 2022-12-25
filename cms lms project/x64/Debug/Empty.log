@@ -1,0 +1,10 @@
+﻿  cms lms.cpp
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(328,1): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(410,1): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(730,1): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(949,1): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(1270,1): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(1736,1): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(1911,69): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+F:\Bahria uni 2nd sem\cms lms project\cms lms.cpp(1942,74): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+  Empty.vcxproj -> F:\Bahria uni 2nd sem\cms lms project\x64\Debug\Empty.exe

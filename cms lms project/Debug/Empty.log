@@ -1,0 +1,2 @@
+﻿oop ast 1.obj : error LNK2019: unresolved external symbol "public: class Vector __thiscall Vector::operator*(class Vector const &)const " (??DVector@@QBE?AV0@ABV0@@Z) referenced in function _main
+F:\Programs\C++ VS\Empty\Debug\Empty.exe : fatal error LNK1120: 1 unresolved externals

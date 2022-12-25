@@ -1,0 +1,4 @@
+This is dummy Quizz 
+Q1.Write C++ program to take product of three numbers ?:
+Q2.Why Use c++ ?
+Q3.write C++ program to find max length string ?
