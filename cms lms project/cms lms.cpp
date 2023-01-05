@@ -326,6 +326,8 @@ public:
         system("cls");
         system("color a0");
         PlaySound(TEXT("welcom to exam managment system.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
+    level5:
+        system("cls");
         int ch;
         cout << "\n\n\n\t\t_____________________________________________________________________________________";
         cout << "\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>    WELCOME TO EXAM MANAGMENT SYSTEM   <<<<<<<<<<<<<<<<<<<<<<\n";
@@ -357,37 +359,43 @@ public:
             system("cls");
             enterexamdpt();
             system("cls");
-            Examdepartmentmainn();
+            //Examdepartmentmainn();
+            goto level5;
             break;
         case 1:
             system("cls");
             E1.show_date_time_duration();
             system("cls");
-            Examdepartmentmainn();
+            //Examdepartmentmainn();
+            goto level5;
             break;
         case 2:
             system("cls");
             t1.show_theory_course_hallno();
             system("cls");
-            Examdepartmentmainn();
+            //Examdepartmentmainn();
+            goto level5;
             break;
         case 3:
             system("cls");
             p1.show_labno();
             system("cls");
-            Examdepartmentmainn();
+            //Examdepartmentmainn();
+            goto level5;
             break;
         case 4:
             system("cls");
             i1.show_theory_lab_invigilators();
             system("cls");
-            Examdepartmentmainn();
+            //Examdepartmentmainn();
+            goto level5;
             break;
         case 5:
             system("cls");
             i1.show_invig_fee();
             system("cls");
-            Examdepartmentmainn();
+            //Examdepartmentmainn();
+            goto level5;
             break;
         case 6:
             system("cls");
@@ -405,11 +413,12 @@ public:
     virtual void cms()
     {
         adminlogin();
+    level5:
         system("cls");
         system("color 80");
         PlaySound(TEXT("welcom to admin system.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
         int ch;
-        // Options to choose an action
+
         cout << "\n\n\n\t\t_____________________________________________________________________________________";
         cout << "\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Welcome to Admin System  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n";
         cout << "\n\t\t||...>>>     "; showdate(); cout << " \t\t\t           "; showtime(); cout << "     <<<...||";
@@ -575,7 +584,8 @@ public:
         cin.get();
         cin.get();
     }
-    void stlist() { //To list total employees with Name, Id and Designation
+    void stlist()
+    {
         system("cls");
         FILE* file;
         file = fopen("student.txt", "r");
@@ -591,7 +601,7 @@ public:
         stwaitForEnter();
     }
     void stshowDetails()
-    { //Displays all details according to Employee's id
+    { 
         system("cls");
         FILE* file;
         char checkId[5];
@@ -623,7 +633,7 @@ public:
         stwaitForEnter();
     }
     void steditExisting()
-    { //edits Designation and CTC of an employee
+    { 
         system("cls");
         char checkId[10];
         char newDesignation[10];
@@ -695,7 +705,8 @@ public:
             staddNew();
         stwaitForEnter();
     }
-    void stdeleteDetails() { //removing records
+    void stdeleteDetails() 
+    { 
         system("cls");
         char checkId[5];
         char ch;
@@ -725,11 +736,14 @@ public:
         else
             stdeleteDetails();
     }
-    void stoptions(void) { //menu
+    void stoptions(void) 
+    { 
         system("cls");
         PlaySound(TEXT("welcome-to-student-managment-system.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
+    level4:
+        system("cls");
         int choice;
-        // Options to choose an action
+        
         cout << "\n\n\n\t\t_____________________________________________________________________________________";
         cout << "\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>  WELCOME TO STUDENT MANAGMENT SYSTEM  <<<<<<<<<<<<<<<<<<<<<<\n";
         cout << "\n\t\t||~~~...>>>  "; showdate(); cout << " \t\t\t          "; showtime(); cout << "    <<<~~~...||";
@@ -752,7 +766,7 @@ public:
         cout << "\n\t\t||~~~...>>>                                                                 <<<~~~...||";
         cout << "\n\t\t______________________________________________________________________________________" << endl;
         _sleep(1000);
-        // Calling relevant function as per choice
+        
         switch (choice) {
         case 0:
             system("CLS");
@@ -760,27 +774,33 @@ public:
             break;
         case 1:
             stlist();
-            stoptions();
+            //stoptions();
+            goto level4;
             break;
         case 2:
             stshowDetails();
-            stoptions();
+            //stoptions();
+            goto level4;
             break;
         case 3:
             steditExisting();
-            stoptions();
+            //stoptions();
+            goto level4;
             break;
         case 4:
             staddNew();
-            stoptions();
+            //stoptions();
+            goto level4;
             break;
         case 5:
             stdeleteDetails();
-            stoptions();
+            //stoptions();
+            goto level4;
             break;
         default:
             cout << "\n Sorry! I don't understand that! \n";
-            stoptions();
+            //stoptions();
+            goto level4;
             break;
         }
     }
@@ -825,7 +845,7 @@ public:
             if (strcmp(checkId, fid) == 0)
             {
                 system("cls");
-                // Options to choose an action
+
                 cout << "\n\t\t    -------------------------------------------------------------";
                 cout << "\n\t\t    --->   NAME :: " << fname;
                 cout << "\n\t\t    -------------------------------------------------------------";
@@ -947,8 +967,9 @@ public:
     {
         system("cls");
         PlaySound(TEXT("welcome-faculty-managment-system.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
+    level3:
+        system("cls");
         int choice;
-
         cout << "\n\n\n\t\t_____________________________________________________________________________________";
         cout << "\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>  WELCOME TO FACULTY MANAGMENT SYSTEM  <<<<<<<<<<<<<<<<<<<<<<\n";
         cout << "\n\t\t||~~~...>>>  "; showdate(); cout << " \t\t\t          "; showtime(); cout << "   <<<~~~...||";
@@ -979,27 +1000,33 @@ public:
             break;
         case 1:
             faclist();
-            facoptions();
+            //facoptions();
+            goto level3;
             break;
         case 2:
             facshowDetails();
-            facoptions();
+            //facoptions();
+            goto level3;
             break;
         case 3:
             faceditExisting();
-            facoptions();
+            //facoptions();
+            goto level3;
             break;
         case 4:
             facaddNew();
-            facoptions();
+            //facoptions();
+            goto level3;
             break;
         case 5:
             facdeleteDetails();
-            facoptions();
+            //facoptions();
+            goto level3;
             break;
         default:
             cout << "\n Sorry! I don't understand that! \n";
-            facoptions();
+            //facoptions();
+            goto level3;
             break;
         }
 
@@ -1008,7 +1035,7 @@ public:
 ////////////////////////////////////////////////////////////////////////
 class facultyy : public Admin
 {
-private:
+
 protected:
     string fpass, email;
     char assignmentname[30], assignmentdeadline[30], astsubmissiontime[10];
@@ -1018,7 +1045,7 @@ public:
 
     ////////////////////////////////////////
     void stattendence()
-    { //edits Designation and CTC of an employee
+    {
         system("cls");
         char checkId[10];
         char newDesignation[10];
@@ -1048,7 +1075,7 @@ public:
         cout << "\n\n\t\t\tAttendence marked\n";
         Sleep(1000);
         stwaitForEnter();
-        cms();
+        //cms();
     }
     ///////////////////////////////////////
     void stviewatten()
@@ -1066,7 +1093,7 @@ public:
         fclose(file);
         cout << "\n\t\t______________________________________________________________________________________";
         stwaitForEnter();
-        cms();
+        //cms();
     }
     ////////////////////////////////////////
     void viewassignment()
@@ -1084,7 +1111,7 @@ public:
         fclose(file);
         cout << "\n\t\t______________________________________________________________________________________" << endl;
         stwaitForEnter();
-        cms();
+        //cms();
     }
 
     void assignmentadd()
@@ -1129,7 +1156,7 @@ public:
             assignmentadd();
         }
         stwaitForEnter();
-        cms();
+        //cms();
     }
 
     /////////////////////////////////
@@ -1148,7 +1175,7 @@ public:
         fclose(file);
         cout << "\n\t\t______________________________________________________________________________________" << endl;
         stwaitForEnter();
-        cms();
+        //cms();
     }
 
     void quizzadd()
@@ -1193,7 +1220,7 @@ public:
         }
 
         stwaitForEnter();
-        cms();
+        //cms();
     }
     /////////////////////////////////
     void viewlecturesUploaded()
@@ -1211,7 +1238,7 @@ public:
         fclose(file);
         cout << "\n\t\t______________________________________________________________________________________" << endl;
         stwaitForEnter();
-        cms();
+        //cms();
     }
 
     void lecturesadd()
@@ -1259,17 +1286,21 @@ public:
         }
 
         stwaitForEnter();
-        cms();
+        //cms();
     }
     ////////////////////////////////
     virtual void cms()
     {
+        system("cls");
         faclogin();
+        PlaySound(TEXT("welcome-to-faculty-cms.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
+    level2:
+        
         system("cls");
         system("color 40");
-        PlaySound(TEXT("welcome-to-faculty-cms.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
+        
         int choice;
-        // Options to choose an action
+
         cout << "\n\n\n\t\t_____________________________________________________________________________________";
         cout << "\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Welcome to Faculty cms  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n";
         cout << "\n\t\t||...>>>     "; showdate(); cout << " \t\t\t           "; showtime(); cout << "     <<<...||";
@@ -1306,34 +1337,42 @@ public:
         case 1:
             system("cls");
             assignmentadd();
+            goto level2;
             break;
         case 2:
             system("cls");
             quizzadd();
+            goto level2;
             break;
         case 3:
             system("cls");
             lecturesadd();
+            goto level2;
             break;
         case 4:
             system("cls");
             viewassignment();
+            goto level2;
             break;
         case 5:
             system("cls");
             viewquizzMark();
+            goto level2;
             break;
         case 6:
             system("cls");
             viewlecturesUploaded();
+            goto level2;
             break;
         case 7:
             system("cls");
             stattendence();
+            goto level2;
             break;
         case 8:
             system("cls");
             stviewatten();
+            goto level2;
             break;
         default:
             cout << "\n Sorry! I don't understand that! \n";
@@ -1459,7 +1498,6 @@ public:
 ///////////////////////////////////////////////////////////////////////
 class student :public facultyy
 {
-private:
 
 protected:
     string useridforprof;
@@ -1582,6 +1620,7 @@ public:
         file.open("Dummy Assignment.txt");
         cout << "This is dummy Assignment \nQ1.Write C++ program to display...Hello World ?:\nQ2.C++ Vs Python debate of Language ?\nQ3.C++ write program to display sum of 2 numbers ?\n";
         file.close();
+
         stwaitForEnter();
         stlms();
     }
@@ -1592,6 +1631,7 @@ public:
         file.open("Dummy Quizz.txt");
         cout << "This is dummy Quizz \nQ1.Write C++ program to take product of three numbers ?:\nQ2.Why Use c++ ?\nQ3.write C++ program to find max length string ?\n";
         file.close();
+
         stwaitForEnter();
         stlms();
     }
@@ -1731,6 +1771,8 @@ public:
     virtual void cms()
     {
         studentlogin();
+    level1:
+        system("cls");
         int choice;
         system("color E5");
         PlaySound(TEXT("welcome-to-student-cms.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
@@ -1763,26 +1805,32 @@ public:
             break;
         case 1:
             stprofinfo();
-            cms();
+            //cms();
+            goto level1;
             break;
         case 2:
             system("cls");
             E1.show_date_time_duration();
-            cms();
+            //cms();
+            goto level1;
             break;
         case 3:
             system("cls");
             t1.show_theory_course_hallno();
-            cms();
+            //cms();
+            goto level1;
             break;
         case 4:
             system("cls");
             p1.show_labno();
-            cms();
+            //cms();
+            goto level1;
             break;
         case 5:
             system("cls");
             stlms();
+            //cms();
+            goto level1;
             break;
         default:
             cout << "\n Sorry! I don't understand that! \n";
@@ -1890,7 +1938,7 @@ public:
         }
         fclose(file);
         stwaitForEnter();
-        cms();
+        //cms();
     }
 };
 
@@ -1940,7 +1988,7 @@ jump:
     case 0:
         system("cls");
         PlaySound(TEXT("thank-you.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
-        // Options to choose an action
+        
         cout << "\n\n\n\t\t_____________________________________________________________________________________";
         cout << "\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>>>>>         PROJECT CREDIT         <<<<<<<<<<<<<<<<<<<<<<<<<\n";
         cout << "\n\t\t------------------------------------------------------------------------------------";
