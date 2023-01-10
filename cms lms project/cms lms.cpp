@@ -10,7 +10,9 @@
 #include<iomanip>
 
 #pragma warning(disable : 4996)
+///-----------------------------------
 
+///-----------------------------------
 using namespace std;
 void showdate()
 {
@@ -35,7 +37,6 @@ string theorycourse_title[5], labcourse_title[2];
     int thhours[5], labhours[2], minutes, seconds;
 
 ///////////////////////////////////Exam dpt//////////////////////////////////////////////
-
 
 class Exam_department
 {
@@ -262,15 +263,15 @@ public:
         myfile << "\nTheory Invigilator fee" << endl;
         for (int i = 0; i < 5; i++)
         {
-            cout << "\n" << setw(10) << left << theory_invigilator[i] << " : " << tfee;
-            myfile << "\n" << setw(10) << left << theory_invigilator[i] << " : " << tfee;
+            cout << "\n" << setw(10) << left << theory_invigilator[i] << " : " << tfee << " $ ";
+            myfile << "\n" << setw(10) << left << theory_invigilator[i] << " : " << tfee << " $ ";
         }
         cout << "\nLab Invigilator fee" << endl;
         myfile << "\n\nLab Invigilator fee" << endl;
         for (int i = 0; i < 2; i++)
         {
-            cout << "\n" << setw(10) << left << lab_invigilator[i] << " : " << lfee;
-            myfile << "\n" << setw(10) << left << lab_invigilator[i] << " : " << lfee;
+            cout << "\n" << setw(10) << left << lab_invigilator[i] << " : " << lfee<< " $ ";
+            myfile << "\n" << setw(10) << left << lab_invigilator[i] << " : " << lfee<< " $ ";
         }
         myfile.close();
         system("pause");
@@ -413,7 +414,7 @@ public:
     virtual void cms()
     {
         adminlogin();
-    level5:
+    //level5:
         system("cls");
         system("color 80");
         PlaySound(TEXT("welcom to admin system.wav"), NULL, SND_ASYNC | SND_LOOP == 1 | SND_FILENAME);
@@ -1195,6 +1196,35 @@ public:
         cout << "\n\t\t          Enter 'y' to save above information ::   "; cin >> ch;
         cout << "\n\t\t______________________________________________________________________________________" << endl;
         _sleep(1000);
+        struct e1 : exception
+        {
+            const char* what() const noexcept
+            {
+                return "File input output error / out of bound charater entered by user";
+            }
+        };
+        try
+        {
+            if (ch == 'y')
+            {
+                FILE* file, * FIle;
+                file = fopen("quizz.txt", "a");
+                FIle = fopen("quizz status.txt", "a");
+                fprintf(file, "%s %s %s \n", quizzname, quizzdate, quizsubmissiontime);
+                fprintf(FIle, "%s %s %s \n", quizzname, quizzdate, quizsubmissiontime);
+
+                fclose(file);
+                fclose(FIle);
+                cout << "\nNew Quizz has been added to database\n";
+                Sleep(1000);
+            }
+        }
+        catch (exception& e)
+        {
+            cout << "Out of Range error: " << e.what() << endl;
+        }
+
+/*
         if (ch == 'y')
         {
             FILE* file, * FIle;
@@ -1210,7 +1240,7 @@ public:
         }
         else
             quizzadd();
-
+*/
         cout << "Continue adding new Quizz? (y/n) : ";
         char cho;
         cin >> cho;
@@ -1289,7 +1319,7 @@ public:
         //cms();
     }
     ////////////////////////////////
-    virtual void cms()
+    void cms()
     {
         system("cls");
         faclogin();
@@ -1768,7 +1798,7 @@ public:
     theory_exam t1;
     practical_exam p1;
 
-    virtual void cms()
+    void cms()
     {
         studentlogin();
     level1:
@@ -1914,6 +1944,7 @@ public:
     void stprofinfo()
     {
         system("cls");
+
         FILE* file;
         file = fopen("student.txt", "r");
         while (fscanf(file, "%s %s %s %s %s %s", &stname[0], &stid[0], &stqualification[0], &stcurrent_deg[0], &stdob[0], &stud_pd[0]) != EOF)
@@ -1994,7 +2025,6 @@ jump:
         cout << "\n\t\t------------------------------------------------------------------------------------";
         cout << "\n\t\t\t\t    --->   BAHRIA UNIVERSITY ISLAMABAD ";
         cout << "\n\n\n\t\t\t\t    --->      MUHAMMAD UMAIR KHAN  ";
-        //cout << "\n\n\n\t\t\t\t    --->      FAIZAN JAWAD  ";
         cout << "\n\n\n\t\t\t\t    --->   INSTRUCTOR   ::   MS NABIA ";        
         cout << "\n\t\t______________________________________________________________________________________" << endl;
         _sleep(5000);
